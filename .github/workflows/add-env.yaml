@@ -1,0 +1,35 @@
+name: Add Environment to Profile
+
+on:
+    workflow_dispatch:
+      inputs:
+          env-def:
+            required: true
+            description: 'Enter the environment definition that starts with SLV_EDS_'
+
+concurrency: slv-add-env
+
+jobs:
+  slv-add-env:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Setup SLV
+        uses: amagioss/slv-action@main
+      - name: Add Environment
+        env:
+            SLV_APP_DATA_DIR: ${{ github.workspace }}
+            SLV_ADMIN_MODE_ENABLED: true
+            SLV_GIT_HTTP_USER: ${{ github.actor }}
+            SLV_GIT_HTTP_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "${{ github.actor }}" ]; then
+            echo "github.actor is empty"
+            exit 1
+          fi
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          slv profile new -n ${{ github.repository_owner }} --git ${{ github.server_url }}/${{ github.repository }}.git
+          slv env add -e ${{ github.event.inputs.env-def }}
+          slv profile push
