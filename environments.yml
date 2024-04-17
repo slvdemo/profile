@@ -8,3 +8,12 @@ environments:
         tags:
             - github-action
             - deployment
+    SLV_EPK_AEAUKAAAAB2FGUSUMIHGBZADAE5XXNR6MPJHJKSRWBKPDKV4FINQJBA6NGUCC:
+        publicKey: SLV_EPK_AEAUKAAAAB2FGUSUMIHGBZADAE5XXNR6MPJHJKSRWBKPDKV4FINQJBA6NGUCC
+        name: demo-k8s
+        email: demo@example.com
+        type: service
+        tags:
+            - k8s
+            - operator
+            - cluster
