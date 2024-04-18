@@ -17,3 +17,11 @@ environments:
             - k8s
             - operator
             - cluster
+    SLV_EPK_AEAUKAAAABZCM5GNFDM74TX6ZSOXTU5DCUZD7BMM2B7TBK5PCPG6PCJQ3RDR4:
+        publicKey: SLV_EPK_AEAUKAAAABZCM5GNFDM74TX6ZSOXTU5DCUZD7BMM2B7TBK5PCPG6PCJQ3RDR4
+        name: github-slvdemo/secrets
+        email: demo@example.com
+        type: service
+        tags:
+            - secrets
+            - k8s
