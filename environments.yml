@@ -40,6 +40,14 @@ environments:
         email: shibly@example.com
         type: user
         tags: []
+    SLV_EPK_AEAUKAAAABIMMU3PCOKTSF3ZLI3CMZ6J56VY5OLYQSSWJ3TWW5RB5UH33WBR2:
+        publicKey: SLV_EPK_AEAUKAAAABIMMU3PCOKTSF3ZLI3CMZ6J56VY5OLYQSSWJ3TWW5RB5UH33WBR2
+        name: self_demo
+        email: self-demo@example.com
+        type: user
+        tags:
+            - self_demo
+            - dev-fest
     SLV_EPK_AEAUKAAAABWUSLDGCDAJOMB7R67CVX6D6RXEYYLA2OHBZQ6IPCPF3GDD4NCCI:
         publicKey: SLV_EPK_AEAUKAAAABWUSLDGCDAJOMB7R67CVX6D6RXEYYLA2OHBZQ6IPCPF3GDD4NCCI
         name: self_demo
