@@ -17,6 +17,14 @@ environments:
         tags:
             - github-action
             - deployment
+    SLV_EPK_AEAUKAAAAAVXUSZKPMSQLRJMM3XA23HXMTCUKBXF4VZMJV43B3WDMELWK5LRQ:
+        publicKey: SLV_EPK_AEAUKAAAAAVXUSZKPMSQLRJMM3XA23HXMTCUKBXF4VZMJV43B3WDMELWK5LRQ
+        name: service_demo
+        email: service-demo@example.com
+        type: service
+        tags:
+            - service_demo
+            - dev-fest
     SLV_EPK_AEAUKAAAAB2FGUSUMIHGBZADAE5XXNR6MPJHJKSRWBKPDKV4FINQJBA6NGUCC:
         publicKey: SLV_EPK_AEAUKAAAAB2FGUSUMIHGBZADAE5XXNR6MPJHJKSRWBKPDKV4FINQJBA6NGUCC
         name: demo-k8s
