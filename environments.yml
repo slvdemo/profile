@@ -48,3 +48,11 @@ environments:
         tags:
             - secrets
             - k8s
+    SLV_EPK_AEAUKAAAACW3F3XJIW4SH4PJWLO6ILKYXEHGZJCPUXR4SROLDWDKYJMTGSKTK:
+        publicKey: SLV_EPK_AEAUKAAAACW3F3XJIW4SH4PJWLO6ILKYXEHGZJCPUXR4SROLDWDKYJMTGSKTK
+        name: self_demo
+        email: self-demo@example.com
+        type: user
+        tags:
+            - self_demo
+            - dev-fest
